@@ -6,7 +6,7 @@
 %define	pdir	XML
 %define	pnam	Filter-DOMFilter-LibXML
 Summary:	XML::Filter::DOMFilter::LibXML - SAX Filter allowing DOM processing of selected subtrees
-#Summary(pl):	
+Summary(pl):	XML::Filter::DOMFilter::LibXML - filtr SAX pozwalaj±cy na przetwarzanie DOM wybranych poddrzew
 Name:		perl-XML-Filter-DOMFilter-LibXML
 Version:	0.02
 Release:	1
@@ -14,7 +14,7 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9089d02fbd5ff914070af4c3b9142f02
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-XML-LibXML >= 1.53
@@ -25,13 +25,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module provides a compromise between SAX and DOM processing by
-allowing to use DOM API to process only reasonably small parts of an XML
-document. It works as a SAX filter temporarily building small DOM trees
-around parts selected by given XPath expressions (with some limitations,
-see L</"LIMITATIONS">).
+allowing to use DOM API to process only reasonably small parts of an
+XML document. It works as a SAX filter temporarily building small DOM
+trees around parts selected by given XPath expressions (with some
+limitations).
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ daje kompromis pomiêdzy przetwarzaniem SAX i DOM zezwalaj±c
+na u¿ywanie API DOM do przetwarzania tylko odpowiednio ma³ych czê¶ci
+dokumentu XML. Dzia³a jako filtr SAX tymczasowo buduj±cy ma³e drzewa
+DOM dla czê¶ci wybranych poprzez podane wyra¿enia XPath (z pewnymi
+ograniczeniami).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -54,5 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorlib}/%{pdir}/*/*/*.pm
+%{perl_vendorlib}/XML/*/*/*.pm
 %{_mandir}/man3/*
