@@ -3,8 +3,8 @@
 %bcond_without	tests		# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	XML
-%define	pnam	Filter-DOMFilter-LibXML
+%define		pdir	XML
+%define		pnam	Filter-DOMFilter-LibXML
 Summary:	XML::Filter::DOMFilter::LibXML - SAX filter allowing DOM processing of selected subtrees
 Summary(pl):	XML::Filter::DOMFilter::LibXML - filtr SAX pozwalaj±cy na przetwarzanie DOM wybranych poddrzew
 Name:		perl-XML-Filter-DOMFilter-LibXML
