@@ -5,14 +5,14 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	XML
 %define	pnam	Filter-DOMFilter-LibXML
-Summary:	XML::Filter::DOMFilter::LibXML - SAX Filter allowing DOM processing of selected subtrees
+Summary:	XML::Filter::DOMFilter::LibXML - SAX filter allowing DOM processing of selected subtrees
 Summary(pl):	XML::Filter::DOMFilter::LibXML - filtr SAX pozwalaj±cy na przetwarzanie DOM wybranych poddrzew
 Name:		perl-XML-Filter-DOMFilter-LibXML
 Version:	0.02
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9089d02fbd5ff914070af4c3b9142f02
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -58,5 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorlib}/XML/*/*/*.pm
+%dir %{perl_vendorlib}/XML/Filter/DOMFilter
+%{perl_vendorlib}/XML/Filter/DOMFilter/*.pm
 %{_mandir}/man3/*
