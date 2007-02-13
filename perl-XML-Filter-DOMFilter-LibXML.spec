@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	Filter-DOMFilter-LibXML
 Summary:	XML::Filter::DOMFilter::LibXML - SAX filter allowing DOM processing of selected subtrees
-Summary(pl.UTF-8):   XML::Filter::DOMFilter::LibXML - filtr SAX pozwalający na przetwarzanie DOM wybranych poddrzew
+Summary(pl.UTF-8):	XML::Filter::DOMFilter::LibXML - filtr SAX pozwalający na przetwarzanie DOM wybranych poddrzew
 Name:		perl-XML-Filter-DOMFilter-LibXML
 Version:	0.02
 Release:	2
