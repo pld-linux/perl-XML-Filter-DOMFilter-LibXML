@@ -9,7 +9,7 @@ Summary:	XML::Filter::DOMFilter::LibXML - SAX filter allowing DOM processing of 
 Summary(pl.UTF-8):	XML::Filter::DOMFilter::LibXML - filtr SAX pozwalający na przetwarzanie DOM wybranych poddrzew
 Name:		perl-XML-Filter-DOMFilter-LibXML
 Version:	0.02
-Release:	2
+Release:	3
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
