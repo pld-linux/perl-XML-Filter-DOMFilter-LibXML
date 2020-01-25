@@ -4,7 +4,6 @@
 
 %define		pdir	XML
 %define		pnam	Filter-DOMFilter-LibXML
-%include	/usr/lib/rpm/macros.perl
 Summary:	XML::Filter::DOMFilter::LibXML - SAX filter allowing DOM processing of selected subtrees
 Summary(pl.UTF-8):	XML::Filter::DOMFilter::LibXML - filtr SAX pozwalający na przetwarzanie DOM wybranych poddrzew
 Name:		perl-XML-Filter-DOMFilter-LibXML
